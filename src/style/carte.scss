@@ -1,0 +1,40 @@
+@mixin flex () {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin card () {
+    height: 340px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.uneCarte {
+    @include flex;
+    width: 25%;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        object-fit: cover;
+       @include card;
+    }
+
+    div {
+        @include flex;
+        @include card;
+        justify-content: flex-end;
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(#FFF3 0%, rgba(0, 0, 0, 0.20) 50%);
+    }
+    
+
+    h2 {
+        font-size: 18px;
+        font-weight: 500;
+        color: #ffffff;
+        padding: 0 10px;
+    }
+}

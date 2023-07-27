@@ -1,6 +1,6 @@
 function Logement () {
     return (
-        <div>Les logements ici</div>
+        <div className="contSection">Les logements ici</div>
     )
 }
 

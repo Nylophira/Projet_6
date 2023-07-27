@@ -1,6 +1,6 @@
 function Erreur () {
     return (
-        <div>404</div>
+        <div className="contSection">404</div>
     )
 }
 

@@ -1,0 +1,7 @@
+.contCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}/*# sourceMappingURL=home.css.map */

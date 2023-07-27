@@ -1,0 +1,30 @@
+.unCollapse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 80%;
+}
+.unCollapse .collaTitre {
+  display: flex;
+  flex-direction: row;
+  background-color: #FF6060;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 5px;
+}
+.unCollapse .collaTitre h2 {
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+  padding: 10px 20px 10px 15px;
+  margin: 0;
+}
+.unCollapse .collaTitre a {
+  margin-right: 10px;
+  transition: transform 200ms cubic-bezier(0.4, 0, 1, 1);
+}
+.unCollapse .collaTitre a:active {
+  transform: rotate(180deg);
+}/*# sourceMappingURL=collapse.css.map */

@@ -1,4 +1,18 @@
-.App {
-  text-align: center;
+.monHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 20px;
 }
-
+.monHeader nav a {
+  font-weight: 500;
+  font-size: 24px;
+  color: #FF6060;
+  padding-left: 60px;
+}
+.monHeader nav a:not(.active) {
+  text-decoration: none;
+}/*# sourceMappingURL=header.css.map */

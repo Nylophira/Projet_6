@@ -1,0 +1,35 @@
+@mixin enLigne() {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+$colorMain: #FF6060;
+
+@mixin ecriture() {
+  font-weight: 500;
+  font-size: 24px;
+  color: $colorMain; 
+}
+
+
+
+.monHeader {
+  @include enLigne();
+  justify-content: space-between;
+  margin-top: 20px;
+
+  nav a {
+    @include ecriture();
+    padding-left: 60px;
+    
+
+    &:not(.active) {
+      text-decoration: none;
+    }
+  }
+
+  
+}
