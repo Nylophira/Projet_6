@@ -16,14 +16,14 @@ $color:  #FF6060;
     
     0% {
         opacity: 0;
-        /* transform: scale(0); */
+        transform: scale(0);
         transform: translateY(-50px);
      }
  
      100% {
         opacity: 1;
-       /*  transform: scale(1); */
-         transform: translateY(0px);
+        transform: scale(1);
+        transform: translateY(0px);
      }
 }
 
@@ -31,13 +31,13 @@ $color:  #FF6060;
     
     0% {
         opacity: 1;
-       /*  transform: scale(1); */
-     transform: translateY(0px); 
+        transform: scale(1); 
+        transform: translateY(0px); 
      }
  
      100% {
         opacity: 0;
-        /* transform: scale(0); */
+        transform: scale(0); 
         transform: translateY(-40px);
      }
 }
@@ -47,10 +47,9 @@ $color:  #FF6060;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    //margin-bottom: 30px;
     width: 80%;
     
-    //Note : faire une petite transition sur la taille du contenu pour éviter cet effet brutal
     .contenuColl {
 
        
@@ -59,16 +58,19 @@ $color:  #FF6060;
         overflow: hidden;
        /*  animation: remonte 500ms ; 
         transition: transform 400ms;*/
-        transition: all 400ms; 
+        //transition: all 400ms; 
 
         //transition: max-height 200ms ease;
 
         .actif {
            
-           animation: glissement 500ms ;
-           //min-height: 100px; 
-           max-height: 100px;
+           animation: glissement 400ms ;
+           //min-height: 30px; 
+           //min-height: 0;
+           //max-height: 100px;
            color:$color;
+           margin: 20px 0;
+           
 
             /* max-height: 100px;
             transition: max-height 200ms ease, opacity 500ms ease, transform 500ms ease;
@@ -78,10 +80,14 @@ $color:  #FF6060;
         } 
 
         .null {
-            animation: remonte 500ms ;
-            max-height: 0;
+            animation: remonte 400ms ;
+           // transition: transform 500ms;
+           max-height: 30px;
+            //min-height: 30px; 
+            //min-height:0;
             opacity: 0;
             color:$color;
+            margin: 0;
            /*  max-height: 0;
             opacity: 0;
             transform: translateY(-50px);
@@ -117,13 +123,9 @@ $color:  #FF6060;
             &:active {
                
                 animation: rotation 500ms;
-                transform: scale(2);
+                //transform: scale(0);
 
             }
-            
-           /*  &:active  .actif {
-                animation: remonte 500ms;
-            }  */
         }        
     }
 

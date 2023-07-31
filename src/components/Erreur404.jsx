@@ -1,6 +1,14 @@
+import { Link } from 'react-router-dom';
+import quatrecentquatre from '../assets/404.png';
+import '../style/erreur404.css';
+
 function Erreur () {
     return (
-        <div className="contSection">404</div>
+        <div className="contSection contErreur">
+            <img src={quatrecentquatre} alt='Erreur 404'/>
+            <h2>Oups ! La page que vous demandez n'existe pas.</h2>
+            <Link to="/">Retourner sur la page d'accueil</Link>
+        </div>
     )
 }
 
