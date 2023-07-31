@@ -1,4 +1,47 @@
 $color:  #FF6060;
+
+@keyframes rotation {
+
+    0% {
+       transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+
+}
+
+@keyframes glissement {
+    
+    0% {
+        opacity: 0;
+        /* transform: scale(0); */
+        transform: translateY(-50px);
+     }
+ 
+     100% {
+        opacity: 1;
+       /*  transform: scale(1); */
+         transform: translateY(0px);
+     }
+}
+
+@keyframes remonte {
+    
+    0% {
+        opacity: 1;
+       /*  transform: scale(1); */
+     transform: translateY(0px); 
+     }
+ 
+     100% {
+        opacity: 0;
+        /* transform: scale(0); */
+        transform: translateY(-40px);
+     }
+}
+
 .unCollapse {
 
     display: flex;
@@ -6,6 +49,47 @@ $color:  #FF6060;
     align-items: center;
     margin-bottom: 30px;
     width: 80%;
+    
+    //Note : faire une petite transition sur la taille du contenu pour éviter cet effet brutal
+    .contenuColl {
+
+       
+        //min-height: 0;
+        
+        overflow: hidden;
+       /*  animation: remonte 500ms ; 
+        transition: transform 400ms;*/
+        transition: all 400ms; 
+
+        //transition: max-height 200ms ease;
+
+        .actif {
+           
+           animation: glissement 500ms ;
+           //min-height: 100px; 
+           max-height: 100px;
+           color:$color;
+
+            /* max-height: 100px;
+            transition: max-height 200ms ease, opacity 500ms ease, transform 500ms ease;
+            animation: glissement 500ms forwards; */
+           
+            
+        } 
+
+        .null {
+            animation: remonte 500ms ;
+            max-height: 0;
+            opacity: 0;
+            color:$color;
+           /*  max-height: 0;
+            opacity: 0;
+            transform: translateY(-50px);
+            animation: remonte 500ms forwards;
+            animation-delay: 500ms; */
+        } 
+
+    }
 
     .collaTitre {
         display: flex;
@@ -15,6 +99,7 @@ $color:  #FF6060;
         justify-content: space-between;
         width: 100%;
         border-radius: 5px;
+        padding: 3px;
     
         h2 {
             color: white;
@@ -24,14 +109,23 @@ $color:  #FF6060;
             margin: 0;
         }
 
-        a {
+        button {
             margin-right: 10px;
-            transition: transform 200ms cubic-bezier(0.4, 0, 1, 1);
+            background-color: $color;
+            border: none;
 
-             &:active {
-                transform: rotate(180deg);
+            &:active {
+               
+                animation: rotation 500ms;
+                transform: scale(2);
+
             }
-        }
-        
+            
+           /*  &:active  .actif {
+                animation: remonte 500ms;
+            }  */
+        }        
     }
+
+        
 }

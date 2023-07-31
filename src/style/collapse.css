@@ -1,9 +1,66 @@
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes glissement {
+  0% {
+    opacity: 0;
+    /* transform: scale(0); */
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    /*  transform: scale(1); */
+    transform: translateY(0px);
+  }
+}
+@keyframes remonte {
+  0% {
+    opacity: 1;
+    /*  transform: scale(1); */
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    /* transform: scale(0); */
+    transform: translateY(-40px);
+  }
+}
 .unCollapse {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
   width: 80%;
+}
+.unCollapse .contenuColl {
+  overflow: hidden;
+  /*  animation: remonte 500ms ; 
+   transition: transform 400ms;*/
+  transition: all 400ms;
+}
+.unCollapse .contenuColl .actif {
+  animation: glissement 500ms;
+  max-height: 100px;
+  color: #FF6060;
+  /* max-height: 100px;
+  transition: max-height 200ms ease, opacity 500ms ease, transform 500ms ease;
+  animation: glissement 500ms forwards; */
+}
+.unCollapse .contenuColl .null {
+  animation: remonte 500ms;
+  max-height: 0;
+  opacity: 0;
+  color: #FF6060;
+  /*  max-height: 0;
+   opacity: 0;
+   transform: translateY(-50px);
+   animation: remonte 500ms forwards;
+   animation-delay: 500ms; */
 }
 .unCollapse .collaTitre {
   display: flex;
@@ -13,6 +70,7 @@
   justify-content: space-between;
   width: 100%;
   border-radius: 5px;
+  padding: 3px;
 }
 .unCollapse .collaTitre h2 {
   color: white;
@@ -21,10 +79,15 @@
   padding: 10px 20px 10px 15px;
   margin: 0;
 }
-.unCollapse .collaTitre a {
+.unCollapse .collaTitre button {
   margin-right: 10px;
-  transition: transform 200ms cubic-bezier(0.4, 0, 1, 1);
+  background-color: #FF6060;
+  border: none;
+  /*  &:active  .actif {
+       animation: remonte 500ms;
+   }  */
 }
-.unCollapse .collaTitre a:active {
-  transform: rotate(180deg);
+.unCollapse .collaTitre button:active {
+  animation: rotation 500ms;
+  transform: scale(2);
 }/*# sourceMappingURL=collapse.css.map */

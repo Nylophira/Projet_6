@@ -22,9 +22,12 @@ function Collapse ({titre, texte}) {
         <div className='unCollapse'>
             <div className="collaTitre">
                 <h2>{titre}</h2>
-                <a href="" onClick={event => modif(event)}>{etat ?  <img src={iOuvert}  alt="flèche vers le bas"/>  : <img src={iFerme}  alt="flèche vers le haut"/> } </a>
+                <button onClick={event => modif(event)}>{etat ?  <img src={iOuvert}  alt="flèche vers le bas"/>  : <img src={iFerme}  alt="flèche vers le haut"/> } </button>
             </div> 
-            {etat ? <p>{contenu}</p>:"" }
+             <div className='contenuColl'>
+                {/*{etat ? <p className='actif'>{contenu}</p>: ""}*/}
+                {etat ? <p className='actif'>{contenu}</p>: <p className='null'>{contenu}</p>}
+            </div>
         </div>
     )
 }
