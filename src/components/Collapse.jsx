@@ -3,7 +3,7 @@ import iFerme from '../assets/arrow_back.png';
 import iOuvert from '../assets/arrow_back_bas.png';
 import { useState } from "react";
 
-function Collapse ({titre, texte}) {
+function Collapse ({titre, texte, typeLog}) {
 
     const [etat, changement] = useState(false);
 
@@ -18,14 +18,18 @@ function Collapse ({titre, texte}) {
 
     const contenu = texte;
 
+   let etatLogement = "";
+    if (typeLog) {
+        etatLogement = typeLog;
+    }
+
     return (
-        <div className='unCollapse'>
+        <div className={`unCollapse ${etatLogement}`}>
             <div className="collaTitre">
                 <h2>{titre}</h2>
                 <button onClick={event => modif(event)}>{etat ?  <img src={iOuvert}  alt="flèche vers le bas"/>  : <img src={iFerme}  alt="flèche vers le haut"/> } </button>
-            </div> 
+            </div>
              <div className='contenuColl'>
-                {/*{etat ? <p className='actif'>{contenu}</p>: ""}*/}
                 {etat ? <p className='actif'>{contenu}</p>: <p className='null'>{contenu}</p>}
             </div>
         </div>

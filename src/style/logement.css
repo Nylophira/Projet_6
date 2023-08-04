@@ -1,0 +1,53 @@
+.contLogement {
+  width: 100%;
+}
+.contLogement .contCol {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contLogement .contCol h2 {
+  margin: 0px;
+}
+.contLogement .contCol h3, .contLogement .contCol .hostPho p {
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 0 10px 0;
+  margin: 0;
+}
+.contLogement .contCol .listeTag {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 0;
+  margin-top: 10px;
+}
+.contLogement .contCol .listeTag li {
+  list-style: none;
+  background-color: #FF6060;
+  color: white;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 5px 15px;
+  margin-right: 20px;
+}
+.contLogement .contCol .hostPho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contLogement .contCol .hostPho p {
+  width: 50%;
+  text-align: right;
+  margin-right: 5px;
+}
+.contLogement .contCol .hostPho img {
+  border-radius: 40px;
+  height: 64px;
+}
+.contLogement .contCollaLog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}/*# sourceMappingURL=logement.css.map */

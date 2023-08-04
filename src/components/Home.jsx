@@ -11,7 +11,7 @@ function Home () {
             <Banniere ou="home"/>
             <div className="contCard">
                 {donnees.map( donnee => {
-                        return <UneCarte  key={donnee.id}  titre={donnee.title} couv={donnee.cover} alt={donnee.description}/>
+                        return <UneCarte  key={donnee.id}  titre={donnee.title} couv={donnee.cover} alt={donnee.description} id={donnee.id}/>
                 })}
             </div>
        </div>

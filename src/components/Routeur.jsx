@@ -14,7 +14,7 @@ function Routeur () {
         <Header/>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/logement' element={<Logement/>}/>
+          <Route path='/logement/:id' element={<Logement/>}/>
           <Route path='/aPropos' element={<Propos/>}/>
           <Route path='*' element={<Erreur/>}/>
         </Routes>

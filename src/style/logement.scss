@@ -1,0 +1,72 @@
+$colorP: #FF6060;
+
+.contLogement {
+    width: 100%;
+
+    .contCol {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        h2 {
+            margin: 0px;
+        }
+    
+        h3 {
+            color: $colorP;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 5px 0 10px 0;
+            margin: 0;
+        }
+    
+        .listeTag {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            padding: 0;
+            margin-top: 10px;
+    
+            li {
+                list-style: none;
+                background-color: $colorP;
+                color: white;
+                border-radius: 10px;
+                font-size: 14px;
+                padding: 5px 15px;
+                margin-right: 20px;
+    
+            }
+    
+        }
+
+        .hostPho {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            p {
+                width: 50%;
+                text-align: right;
+                @extend h3;
+                margin-right: 5px;
+
+            }
+
+            img {
+                border-radius: 40px;
+                height: 64px;
+            }
+        }
+    }
+
+    .contCollaLog {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+   
+    
+    
+}

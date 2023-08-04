@@ -1,8 +1,17 @@
 .contErreur {
-  height: 500px;
+  height: 600px;
   justify-content: space-around;
 }
 
 h2, a {
   color: #FF6060;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+a {
+  font-size: 18px;
 }/*# sourceMappingURL=erreur404.css.map */

@@ -15,6 +15,12 @@
     margin: 10px;
     overflow: hidden;
     position: relative;
+    
+
+    &:hover {
+        transition: transform 400ms;
+        transform: scale(1.1);
+    }
 
     img {
         object-fit: cover;
