@@ -7,12 +7,34 @@
   justify-content: space-between;
   margin-top: 20px;
 }
+.monHeader nav {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
 .monHeader nav a {
   font-weight: 500;
   font-size: 24px;
   color: #FF6060;
-  padding-left: 60px;
+  padding-left: 5px;
 }
 .monHeader nav a:not(.active) {
   text-decoration: none;
+}
+
+/************** Responsive pour smartphone *****************/
+@media all and (max-width: 768px) {
+  .monHeader {
+    /* width: auto; */
+  }
+  .monHeader img {
+    width: 145px;
+  }
+  .monHeader nav {
+    width: 40%;
+  }
+  .monHeader nav a {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=header.css.map */

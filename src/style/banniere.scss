@@ -7,6 +7,7 @@ $centre: center;
     align-items: $centre;
     justify-content: $centre;
     width: $full;
+    /* width: 90%; */
     height: 223px;
     margin: 40px 0;
 
@@ -26,3 +27,21 @@ $centre: center;
         font-size: 48px;
     }
 }
+
+/************** Responsive pour smartphone *****************/
+
+@media all and (max-width: 768px ) {
+      
+    .contBanner {
+        height: 111px;
+        align-items: flex-start;
+
+        h1 {
+            font-size: 24px;
+            width: 50%;
+            margin-left: 20px;
+        }
+    }
+    
+   
+  }

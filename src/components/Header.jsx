@@ -14,7 +14,7 @@ function Header() {
         
         <Link to="/" className={monChemin === "/" ? "active":""}>Accueil</Link>
         <Link to="/aPropos" className={monChemin === "/aPropos" ? "active":""}>A propos</Link>
-        {/* <Link to={`/aPropos/${ouClick}`}>A propos</Link> */}
+  
       </nav>
     </div>
   );

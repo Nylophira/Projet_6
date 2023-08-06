@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  /* width: 90%; */
   height: 223px;
   margin: 40px 0;
 }
@@ -20,4 +21,17 @@
   color: #ffffff;
   font-weight: 500;
   font-size: 48px;
+}
+
+/************** Responsive pour smartphone *****************/
+@media all and (max-width: 768px) {
+  .contBanner {
+    height: 111px;
+    align-items: flex-start;
+  }
+  .contBanner h1 {
+    font-size: 24px;
+    width: 50%;
+    margin-left: 20px;
+  }
 }/*# sourceMappingURL=banniere.css.map */
