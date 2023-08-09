@@ -53,3 +53,25 @@
 
     
 }
+
+/************** Responsive pour smartphone *****************/
+
+@media all and (max-width: 768px ) {
+
+    .contCarrousel {
+        height: 255px;
+
+        .contFleche  {
+            
+            .fleche {
+                height: 24px;
+            }
+
+            #numIndex {
+                display: none;
+            }
+           
+        }
+    }
+
+}

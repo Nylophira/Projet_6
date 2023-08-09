@@ -7,9 +7,33 @@
 	left: 0;
 	width: 100%; 
 
-    img {
+    .Ordi {
         width: 100%;
         height: 209px;
         object-fit: cover;
     }
+
+    .mobile {
+        display: none;
+    }
 }
+
+
+ /************** Responsive pour smartphone *****************/
+
+    @media all and (max-width: 768px ) {
+
+        .monFooter  {
+
+            .mobile {
+                width: 100%;
+                height: 209px;
+                object-fit: cover;
+                display: flex;
+            }
+
+            .Ordi {
+                display: none;
+            }
+        }
+    }

@@ -25,6 +25,7 @@ $colorMain: #FF6060;
     width: 25%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     a {
       @include ecriture();
@@ -56,7 +57,7 @@ $colorMain: #FF6060;
 
         nav {
 
-          width: 40%;
+          width: 45%;
 
           a {
 

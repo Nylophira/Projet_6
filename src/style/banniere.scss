@@ -25,6 +25,10 @@ $centre: center;
         color: #ffffff;
         font-weight: 500;
         font-size: 48px;
+
+        br {
+            display: none;
+        }
     }
 }
 
@@ -35,13 +39,21 @@ $centre: center;
     .contBanner {
         height: 111px;
         align-items: flex-start;
+        margin: 20px 0 10px 0;
 
         h1 {
+
             font-size: 24px;
-            width: 50%;
             margin-left: 20px;
+
+            br {
+                display: inline;
+            }
         }
     }
     
+    .banAP {
+        height: 223px;
+    }
    
   }

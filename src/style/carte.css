@@ -33,4 +33,23 @@
   font-weight: 500;
   color: #ffffff;
   padding: 0 10px;
+}
+
+/************** Responsive pour smartphone *****************/
+@media all and (max-width: 768px) {
+  .uneCarte {
+    height: 255px;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .uneCarte:hover {
+    transform: scale(1.05);
+  }
+  .uneCarte img, .uneCarte div {
+    height: 255px;
+    width: 100%;
+  }
+  .uneCarte h2 {
+    width: 40%;
+  }
 }/*# sourceMappingURL=carte.css.map */

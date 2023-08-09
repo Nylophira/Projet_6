@@ -33,8 +33,8 @@ function Logement () {
                             <Carrousel  key={`${donnee.id}-${num}`}  photos={donnee.pictures}/>
                             <div className="contCol">
                                 <div className="colG">
-                                    <h2>{donnee.title}</h2>
-                                    <h3>{donnee.location}</h3>
+                                    <h1>{donnee.title}</h1>
+                                    <h2>{donnee.location}</h2>
                                     <ul className="listeTag">
                                         {donnee.tags.map ((unTag, numero) => {
                                             return <li key={`${donnee.tags}-${numero}`}>{unTag}</li>
@@ -46,7 +46,7 @@ function Logement () {
                                         <p>{donnee.host.name}</p>
                                         <img src={donnee.host.picture}alt="portrait de votre hôte"/>
                                     </div>
-                                    <div>
+                                    <div className="rating">
                                         {echelle.map ((x, numero) => {
                                         return donnee.rating>=x ? <img key={`${donnee.rating}/${numero}`} src={starAct} alt="étoile complète"/> :  <img key={`${donnee.rating}/${numero}`} src={startIna} alt="étoile vide"/>
                                         })}

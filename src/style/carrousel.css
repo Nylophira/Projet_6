@@ -42,4 +42,17 @@
       object-fit: cover;
       border-radius: 25px;
   }*/
+}
+
+/************** Responsive pour smartphone *****************/
+@media all and (max-width: 768px) {
+  .contCarrousel {
+    height: 255px;
+  }
+  .contCarrousel .contFleche .fleche {
+    height: 24px;
+  }
+  .contCarrousel .contFleche #numIndex {
+    display: none;
+  }
 }/*# sourceMappingURL=carrousel.css.map */

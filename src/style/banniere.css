@@ -22,16 +22,25 @@
   font-weight: 500;
   font-size: 48px;
 }
+.contBanner h1 br {
+  display: none;
+}
 
 /************** Responsive pour smartphone *****************/
 @media all and (max-width: 768px) {
   .contBanner {
     height: 111px;
     align-items: flex-start;
+    margin: 20px 0 10px 0;
   }
   .contBanner h1 {
     font-size: 24px;
-    width: 50%;
     margin-left: 20px;
+  }
+  .contBanner h1 br {
+    display: inline;
+  }
+  .banAP {
+    height: 223px;
   }
 }/*# sourceMappingURL=banniere.css.map */

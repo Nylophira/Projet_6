@@ -7,3 +7,13 @@
     /* width: 90%; */
 
 }
+
+/************** Responsive pour smartphone *****************/
+
+@media all and (max-width: 768px ) {
+   
+    .contCard {
+        flex-direction: column;
+    }
+
+}

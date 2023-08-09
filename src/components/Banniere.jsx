@@ -7,14 +7,14 @@ function Banniere ({ou}) {
    //console.log(ou);
     if (ou==="propos") {
         return (
-            <div className='contBanner'>
+            <div className='contBanner banAP'>
                 <img className='bannerAccueil' src={bannerAP} alt="Forêt avec rivière et montagnes enneignées au loin"/> 
             </div>)
     } else {
         return (
             <div className='contBanner'>
                 <img className='bannerAccueil' src={banner} alt="Petite falaise dans le brouillard avec une mer agitée"/>
-                <h1>Chez vous, partout et ailleurs</h1>
+                <h1>Chez vous, <br></br> partout et ailleurs </h1>
             </div> )
     }
     

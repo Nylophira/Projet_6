@@ -44,3 +44,33 @@
         padding: 0 10px;
     }
 }
+
+/************** Responsive pour smartphone *****************/
+
+@media all and (max-width: 768px ) {
+
+    @mixin respCard () {
+        height: 255px;
+        width: 100%;
+    }
+
+    .uneCarte {
+       @include respCard;
+        margin: 0 0 20px 0;
+        //margin: 0;
+
+        &:hover {
+          
+            transform: scale(1.05); 
+        }
+
+        img, div {
+           
+           @include respCard;
+        }
+
+        h2 {
+            width: 40%;
+        }
+    }
+}

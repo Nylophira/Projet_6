@@ -6,10 +6,13 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.contLogement .contCol h2 {
+.contLogement .contCol h1 {
+  color: #FF6060;
+  font-weight: 500;
   margin: 0px;
+  font-size: 36px;
 }
-.contLogement .contCol h3, .contLogement .contCol .hostPho p {
+.contLogement .contCol h2, .contLogement .contCol .hostPho p {
   color: #FF6060;
   font-size: 18px;
   font-weight: 500;
@@ -29,7 +32,7 @@
   color: white;
   border-radius: 10px;
   font-size: 14px;
-  padding: 5px 15px;
+  padding: 3px 15px;
   margin-right: 20px;
 }
 .contLogement .contCol .hostPho {
@@ -50,4 +53,48 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+/************** Responsive pour smartphone *****************/
+@media all and (max-width: 768px) {
+  .contLogement .contCol {
+    display: flex;
+    flex-direction: column;
+  }
+  .contLogement .contCol h1 {
+    font-size: 18px;
+  }
+  .contLogement .contCol h2, .contLogement .contCol .hostPho p {
+    font-size: 14px;
+  }
+  .contLogement .contCol .listeTag li {
+    font-size: 10px;
+  }
+  .contLogement .contCol .colD {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contLogement .contCol .colD .hostPho {
+    order: 2;
+    justify-content: space-between;
+    width: 30%;
+  }
+  .contLogement .contCol .colD .hostPho p {
+    font-size: 12px;
+  }
+  .contLogement .contCol .colD .hostPho img {
+    height: 32px;
+  }
+  .contLogement .contCol .colD .rating {
+    order: 1;
+  }
+  .contLogement .contCol .colD .rating img {
+    height: 18px;
+  }
+  .contLogement .contCollaLog {
+    flex-direction: column;
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=logement.css.map */

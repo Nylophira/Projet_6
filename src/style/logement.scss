@@ -9,11 +9,14 @@ $colorP: #FF6060;
         flex-direction: row;
         justify-content: space-between;
 
-        h2 {
+        h1 {
+            color: $colorP;
+            font-weight: 500;
             margin: 0px;
+            font-size: 36px;
         }
     
-        h3 {
+        h2 {
             color: $colorP;
             font-size: 18px;
             font-weight: 500;
@@ -34,7 +37,7 @@ $colorP: #FF6060;
                 color: white;
                 border-radius: 10px;
                 font-size: 14px;
-                padding: 5px 15px;
+                padding: 3px 15px;
                 margin-right: 20px;
     
             }
@@ -49,7 +52,7 @@ $colorP: #FF6060;
             p {
                 width: 50%;
                 text-align: right;
-                @extend h3;
+                @extend h2;
                 margin-right: 5px;
 
             }
@@ -69,4 +72,68 @@ $colorP: #FF6060;
    
     
     
+}
+
+/************** Responsive pour smartphone *****************/
+
+@media all and (max-width: 768px ) {
+
+    .contLogement {
+    
+        .contCol {
+
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+            font-size: 18px; 
+            }
+
+            h2 {
+                font-size: 14px;
+            }
+
+            .listeTag li {
+                font-size: 10px;
+            }
+
+            .colD {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .hostPho {
+                    order: 2;
+                    justify-content: space-between;
+                    width: 30%;
+                    
+                    p {
+                        font-size: 12px;
+                    
+                    }
+
+                    img {
+                        height: 32px;
+                    }
+                }
+
+                .rating {
+                    
+                    order: 1;
+
+                    img {
+                        height: 18px;
+                    }
+                }
+            }
+        }
+
+        .contCollaLog {
+            
+            flex-direction: column;
+            margin-top: 10px;
+        
+        }
+    }
 }

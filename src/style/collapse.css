@@ -25,7 +25,7 @@
     transform: translateY(0px);
   }
   100% {
-    opacity: 1;
+    opacity: 0;
     transform: scale(0);
     transform: translateY(-40px);
   }
@@ -38,14 +38,17 @@
 }
 .unCollapse .contenuColl {
   overflow: hidden;
+  width: 101%;
 }
 .unCollapse .contenuColl .actif {
-  animation: glissement 400ms;
+  animation: glissement 500ms;
   color: #FF6060;
-  margin: 20px 0;
+  padding: 20px 15px;
+  margin: 0 0 30px 0;
+  background-color: #f5f5f5;
 }
 .unCollapse .contenuColl .null {
-  animation: remonte 400ms;
+  animation: remonte 500ms;
   max-height: 30px;
   opacity: 0;
   color: #FF6060;
@@ -84,4 +87,30 @@
 .texte .collaTitre h2, .liste .collaTitre h2 {
   padding: 5px 20px 5px 15px;
   margin: 0;
+}
+.texte li, .liste li {
+  list-style: none;
+}
+
+/************** Responsive pour smartphone *****************/
+@media all and (max-width: 768px) {
+  .unCollapse {
+    width: 100%;
+  }
+  .unCollapse .collaTitre h2 {
+    padding: 5px 10px 5px 10px;
+    font-size: 13px;
+  }
+  .unCollapse img {
+    height: 10px;
+  }
+  .unCollapse .contenuColl .actif {
+    font-size: 11px;
+    padding: 10px;
+    margin: 0 0 15px 0;
+  }
+  .unCollapse .contenuColl .null {
+    max-height: 20px;
+    font-size: 11px;
+  }
 }/*# sourceMappingURL=collapse.css.map */

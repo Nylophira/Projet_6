@@ -7,9 +7,26 @@
   left: 0;
   width: 100%;
 }
-.monFooter img {
+.monFooter .Ordi {
   width: 100%;
   height: 209px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.monFooter .mobile {
+  display: none;
+}
+
+/************** Responsive pour smartphone *****************/
+@media all and (max-width: 768px) {
+  .monFooter .mobile {
+    width: 100%;
+    height: 209px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: flex;
+  }
+  .monFooter .Ordi {
+    display: none;
+  }
 }/*# sourceMappingURL=footer.css.map */

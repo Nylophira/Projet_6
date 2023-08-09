@@ -1,17 +1,38 @@
 .contErreur {
     height: 600px;
     justify-content: space-around;
+
+
+    h1, a {
+        color: #FF6060;
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    a {
+        font-size: 18px
+    }
 }
 
-h2, a {
-    color: #FF6060;
-}
+/************** Responsive pour smartphone *****************/
 
-h2 {
-    font-size: 36px;
-    font-weight: 500;
-}
+    @media all and (max-width: 768px ) {
+        .contErreur {
+        
+            img {
+                height: 99px;
+            }
 
-a {
-    font-size: 18px
-}
+            h1 {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            a {
+                font-size: 14px
+            }
+        }
+    }
