@@ -1,8 +1,5 @@
 import Banniere from "./Banniere.jsx";
 import Collapse from "./Collapse.jsx";
-/* import { useState } from "react";
-
-const [etat, changement] = useState(false); */
 
 function Propos () {
 

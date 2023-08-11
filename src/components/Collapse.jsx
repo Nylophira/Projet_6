@@ -16,7 +16,7 @@ function Collapse ({titre, texte, typeLog}) {
         }
     }
 
-    const contenu = texte;
+   const contenu = texte;
 
    let etatLogement = "";
     if (typeLog) {

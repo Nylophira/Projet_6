@@ -16,7 +16,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* background: linear-gradient(rgba(255, 255, 255, 0.76) 0%, rgba(255, 255, 255, 0) 20%); */
 }
 .contCarrousel .contFleche .fleche {
   width: auto;
@@ -36,12 +35,6 @@
 }
 .contCarrousel div {
   width: 100%;
-  /*.imgCa {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      border-radius: 25px;
-  }*/
 }
 
 /************** Responsive pour smartphone *****************/

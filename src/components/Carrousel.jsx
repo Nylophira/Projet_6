@@ -52,17 +52,3 @@ function Carrousel ({photos}) {
 }
 
 export default Carrousel;
-
-   /*  return (
-            <div className="contCarrousel">
-                <div className='contFleche'>
-                <img className='fleche' src={flecheG} alt="flèche gauche" />
-                <img className='fleche' src={flecheD} alt="flèche droite" />
-                </div>
-                <div>
-                    {photos.map( x => {
-                        return (<img className='imgCa' key={x} src={x} alt="Illustrations de l'appartement"/>)
-                    })}
-                </div>
-            </div>
-        ) */

@@ -4,7 +4,6 @@ import '../style/banniere.css';
 
 function Banniere ({ou}) {
 
-   //console.log(ou);
     if (ou==="propos") {
         return (
             <div className='contBanner banAP'>
@@ -17,7 +16,6 @@ function Banniere ({ou}) {
                 <h1>Chez vous, <br></br> partout et ailleurs </h1>
             </div> )
     }
-    
     
 }
 

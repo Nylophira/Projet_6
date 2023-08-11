@@ -7,7 +7,6 @@ $centre: center;
     align-items: $centre;
     justify-content: $centre;
     width: $full;
-    /* width: 90%; */
     height: 223px;
     margin: 40px 0;
 
@@ -16,8 +15,7 @@ $centre: center;
         width: $full;
         height: $full;
         object-fit: cover;
-        border-radius: 30px;
-              
+        border-radius: 30px;          
     }
 
     h1 {
@@ -42,10 +40,8 @@ $centre: center;
         margin: 20px 0 10px 0;
 
         h1 {
-
             font-size: 24px;
             margin-left: 20px;
-
             br {
                 display: inline;
             }

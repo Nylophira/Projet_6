@@ -3,7 +3,6 @@ import UneCarte from "./UneCarte.jsx";
 import donnees from "../data/logements.json";
 import "../style/home.css";
 
-
 function Home () {
 
     return (

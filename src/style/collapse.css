@@ -85,7 +85,7 @@
   align-items: flex-start;
 }
 .texte .collaTitre h2, .liste .collaTitre h2 {
-  padding: 5px 20px 5px 15px;
+  padding: 8px 20px 8px 15px;
   margin: 0;
 }
 .texte li, .liste li {
