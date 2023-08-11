@@ -7,7 +7,7 @@ function Erreur () {
         <div className="contSection contErreur">
             <img src={quatrecentquatre} alt='Erreur 404'/>
             <h1>Oups ! La page que vous demandez n'existe pas.</h1>
-            <Link to="/">Retourner sur la page d'accueil</Link>
+            <Link to="/Projet_6">Retourner sur la page d'accueil</Link>
         </div>
     )
 }

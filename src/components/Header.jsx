@@ -12,7 +12,7 @@ function Header() {
       <img src={accueil} alt="Logo de Kasa" />
       <nav>
         
-        <Link to="/" className={monChemin === "/" ? "active":""}>Accueil</Link>
+        <Link to="/Projet_6" className={monChemin === "/Projet_6" ? "active":""}>Accueil</Link>
         <Link to="/aPropos" className={monChemin === "/aPropos" ? "active":""}>A propos</Link>
   
       </nav>
