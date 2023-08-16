@@ -55,9 +55,11 @@ function Logement () {
                             </div>
                             <div className="contCollaLog">
                             <Collapse titre="Description" texte={donnee.description} typeLog="texte"/>
-                            <Collapse titre="Equipements" texte={donnee.equipments.map ((unE, numero) => {
+                            <Collapse titre="Equipements" texte=
+                                {donnee.equipments.map ((unE, numero) => {
                                 return <li key={`${donnee.equipments}-${numero}`}>{unE}</li> 
-                                })} typeLog="liste"/>
+                                })}
+                                typeLog="liste"/>
                             </div>
                         </div>
                     )

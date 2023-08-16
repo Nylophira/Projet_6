@@ -16,13 +16,20 @@ function Collapse ({titre, texte, typeLog}) {
         }
     }
 
-   const contenu = texte;
+   //const contenu = texte;
+   let maBalise;
 
    let etatLogement = "";
     if (typeLog) {
         etatLogement = typeLog;
     }
 
+    if (typeLog === "liste") {
+        maBalise = <ul className={etat ? 'actif':'null'}>{texte}</ul>;
+    } else {
+       maBalise = <p className={etat ? 'actif':'null'}>{texte}</p>;
+    }
+    
     return (
         <div className={`unCollapse ${etatLogement}`}>
             <div className="collaTitre">
@@ -30,7 +37,7 @@ function Collapse ({titre, texte, typeLog}) {
                 <button onClick={event => modif(event)}>{etat ?  <img src={iOuvert}  alt="flèche vers le bas"/>  : <img src={iFerme}  alt="flèche vers le haut"/> } </button>
             </div>
              <div className='contenuColl'>
-                {etat ? <p className='actif'>{contenu}</p>: <p className='null'>{contenu}</p>}
+                {maBalise}
             </div>
         </div>
     )
