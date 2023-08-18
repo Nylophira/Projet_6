@@ -16,11 +16,9 @@ function Logement () {
     
     //recherche si l'id existe
     let vraiID = false;
-    donnees.forEach ( x => {
-        if (x.id === id) {
-           return vraiID= true;
-        }
-    })
+    if(mesDonnees.length > 0) {
+        vraiID=true;
+    }
    if (!vraiID) {
         return <Navigate to="*"/>;
     } else {
