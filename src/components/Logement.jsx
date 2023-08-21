@@ -15,14 +15,9 @@ function Logement () {
     const echelle = [1, 2, 3, 4, 5]; 
     
     //recherche si l'id existe
-    let vraiID = false;
-    if(mesDonnees.length > 0) {
-        vraiID=true;
-    }
-   if (!vraiID) {
-        return <Navigate to="*"/>;
+    if(mesDonnees.length === 0) {
+       return <Navigate to="*"/>;
     } else {
-    
         return (
             <div  className="contSection">
             {mesDonnees.map( (donnee, num) => {

@@ -16,7 +16,6 @@ function Collapse ({titre, texte, typeLog}) {
         }
     }
 
-   //const contenu = texte;
    let maBalise;
 
    let etatLogement = "";
