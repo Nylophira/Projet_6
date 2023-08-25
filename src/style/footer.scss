@@ -2,19 +2,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
     position: absolute;
-	top: 100;
 	left: 0;
 	width: 100%; 
+    height: 209px;
+    background-color: black;
 
-    .Ordi {
-        width: 100%;
-        height: 209px;
-        object-fit: cover;
+    img {
+        width: 123px;
+        height: auto;
+        margin-bottom: 30px;
     }
 
-    .mobile {
-        display: none;
+    p {
+        color: white;
+        font-size: 24px;
     }
 }
 
@@ -24,15 +27,16 @@
 
         .monFooter  {
 
-            .mobile {
-                width: 100%;
-                height: 209px;
-                object-fit: cover;
-                display: flex;
+            justify-content: center;
+
+            img {
+                margin-bottom: 5px;
             }
 
-            .Ordi {
-                display: none;
+            p {
+                text-align: center;
+                font-size: 12px;
+                width: 35%;
             }
         }
     }

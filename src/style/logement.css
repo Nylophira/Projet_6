@@ -21,6 +21,7 @@
 }
 .contLogement .contCol .listeTag {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: left;
   padding: 0;
@@ -33,7 +34,7 @@
   border-radius: 10px;
   font-size: 14px;
   padding: 3px 15px;
-  margin-right: 20px;
+  margin: 5px 20px 5px 0;
 }
 .contLogement .contCol .hostPho {
   display: flex;

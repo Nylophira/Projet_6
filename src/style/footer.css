@@ -2,31 +2,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   position: absolute;
-  top: 100;
   left: 0;
   width: 100%;
-}
-.monFooter .Ordi {
-  width: 100%;
   height: 209px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-color: black;
 }
-.monFooter .mobile {
-  display: none;
+.monFooter img {
+  width: 123px;
+  height: auto;
+  margin-bottom: 30px;
+}
+.monFooter p {
+  color: white;
+  font-size: 24px;
 }
 
 /************** Responsive pour smartphone *****************/
 @media all and (max-width: 768px) {
-  .monFooter .mobile {
-    width: 100%;
-    height: 209px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    display: flex;
+  .monFooter {
+    justify-content: center;
   }
-  .monFooter .Ordi {
-    display: none;
+  .monFooter img {
+    margin-bottom: 5px;
+  }
+  .monFooter p {
+    text-align: center;
+    font-size: 12px;
+    width: 35%;
   }
 }/*# sourceMappingURL=footer.css.map */
